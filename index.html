@@ -68,29 +68,33 @@
 
     /* Pixel cat */
     .pixel-cat {
-      position: fixed;
-      bottom: 25px;
-      left: -60px;
-      width: 50px;
-      animation: catMove 20s linear infinite;
-    }
+  position: fixed;
+  bottom: 25px;
+  left: -120px;
+  width: 120px;        /* BIGGER & CUTER */
+  image-rendering: pixelated; /* keeps pixel look sharp */
+  animation: catMove 20s linear infinite;
+}
 
-    @keyframes catMove {
-      0% {
-        left: -60px;
-        transform: scaleX(1);
-      }
-      50% {
-        left: calc(100% - 50px);
-        transform: scaleX(1);
-      }
-      51% {
-        transform: scaleX(-1);
-      }
-      100% {
-        left: -60px;
-        transform: scaleX(-1);
-      }
+
+   @keyframes catMove {
+  0% {
+    left: -120px;
+    transform: scaleX(1);
+  }
+  50% {
+    left: calc(100% - 120px);
+    transform: scaleX(1);
+  }
+  51% {
+    transform: scaleX(-1);
+  }
+  100% {
+    left: -120px;
+    transform: scaleX(-1);
+  }
+}
+
     }
   </style>
 </head>
