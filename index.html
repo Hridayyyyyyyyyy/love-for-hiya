@@ -1,0 +1,129 @@
+<head>
+  <meta charset="UTF-8">
+  <title>For My Love: Hiya🤍 </title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400&family=Allura&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #ffd6e5; /* baby pink */
+      font-family: 'Inter', sans-serif;
+      color: #2c2c2c;
+      overflow-x: hidden;
+    }
+
+    /* Rose corners */
+    body::before,
+    body::after {
+      content: "🌹";
+      position: fixed;
+      font-size: 5rem;
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    body::before {
+      top: 20px;
+      left: 20px;
+    }
+
+    body::after {
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 90px 25px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      margin-top: 70px;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin: 20px 0;
+    }
+
+    /* Handwriting love quote */
+    .love-quote {
+      font-family: 'Allura', cursive;
+      font-size: 2.4rem;
+      margin: 80px 0;
+      color: #8b2f4a;
+    }
+
+    /* Pixel cat */
+    .pixel-cat {
+      position: fixed;
+      bottom: 25px;
+      left: -60px;
+      width: 50px;
+      animation: catMove 20s linear infinite;
+    }
+
+    @keyframes catMove {
+      0% {
+        left: -60px;
+        transform: scaleX(1);
+      }
+      50% {
+        left: calc(100% - 50px);
+        transform: scaleX(1);
+      }
+      51% {
+        transform: scaleX(-1);
+      }
+      100% {
+        left: -60px;
+        transform: scaleX(-1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hiya ❤️🤍</h1>
+
+    <p>
+      This page exists for one reason — you.
+    </p>
+
+    <h2>Why you matter</h2>
+    <p>
+      You make ordinary moments feel softer and more meaningful.
+      With you, everything feels calmer, warmer, and more real.
+    </p>
+
+    <p>
+      Being with you feels like finding something I didn’t even know I was missing.
+    </p>
+
+    <div class="love-quote">
+      I love you in ways words will never fully explain,
+      but I hope you feel it in everything I do.
+    </div>
+
+    <h2>A quiet promise</h2>
+    <p>
+      I don’t have everything figured out,
+      but choosing you will always feel right to me.
+    </p>
+  </div>
+
+  <!-- Pixel Cat -->
+  <img src="pixel-cat.png" class="pixel-cat" alt="cute pixel cat">
+</body>
